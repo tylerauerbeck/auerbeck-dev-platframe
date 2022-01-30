@@ -23,6 +23,6 @@ mixin header-1(url, icon, h1, navigation, hook)
                         li
                             a(href=anchor.href)= anchor.name
 
-                                svg(role="img" title="Follow us on Twitter")
+                                svg(title=anchor.title)
 
-                                    use(xlink:href="/assets/images/_sprites/symbols.svg#footer-2-twitter")
+                                    use(xlink:href=anchor.image)
